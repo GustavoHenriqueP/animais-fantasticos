@@ -1,8 +1,4 @@
 export default class ScrollSuave {
-  linksInternos;
-
-  options;
-
   //* Como é um constructor, e não uma definição de função, não podemos passar o argumento padrão no estilo ES6+ = (links, options = { })
   constructor(links, options) {
     this.linksInternos = document.querySelectorAll(links);
