@@ -19,6 +19,10 @@ export default class ScrollSuave {
     const section = document.querySelector(href);
 
     section.scrollIntoView(this.options);
+
+    //* Seria para isso que o bind no constructor seria importante, a função removeEventListener só aceita o nome da função em si com o this correto, e não apenas um callback com arrow function.
+    // event.target.removeEventListener("click", this.scrollToSection); FUNCIONA
+    // event.target.removeEventListener("click", () => this.scrollToSection); NÃO FUNCIONA
   }
 
   addLinkEvent() {
