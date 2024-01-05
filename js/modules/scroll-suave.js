@@ -35,7 +35,7 @@ export default class ScrollSuave {
       // this.removeEventListener();
       // });
 
-      //* Agora, o script irá procurar primeiro essa função no corpo principal do objeto e irá achá-la, já declarada com o this definido como o objeto. Não precisando descer até o prototype para achar a função original.
+      //* Agora, o script irá procurar primeiro essa função no corpo principal do objeto e irá achá-la, já declarada com o this definido como o objeto. Não precisando descer até o prototype para achar a função original, que possuía nenhum contexto já pré-definido.
       link.addEventListener("click", this.scrollToSection);
     });
   }
